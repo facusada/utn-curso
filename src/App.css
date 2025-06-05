@@ -1,3 +1,10 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -12,15 +19,14 @@ body {
 }
 
 .container {
+  max-width: 400px;
+  width: 100%;
   background: white;
   padding: 2rem;
+  margin: 2rem;
   border-radius: 10px;
-  box-shadow: 0 0 10px #ccc;
-  width: 400px;
-}
-
-.form-group {
-  margin-bottom: 1rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
 }
 
 label {
@@ -31,9 +37,12 @@ label {
 
 input {
   width: 100%;
+  box-sizing: border-box;
   padding: 0.6rem;
   border: 1px solid #ccc;
   border-radius: 5px;
+  background-color: #fff;
+  font-size: 1rem;
 }
 
 button {
@@ -46,4 +55,18 @@ button {
   font-weight: bold;
   border-radius: 5px;
   cursor: pointer;
+}
+
+.titulo {
+  color: #007bff;
+}
+
+input::placeholder {
+  color: #999;
+}
+
+input:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 3px rgba(0, 123, 255, 0.5);
 }
