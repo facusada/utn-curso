@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import { Link } from 'react-router-dom'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 import styles from './Products.module.css'
@@ -22,11 +23,13 @@ export default function Products() {
         {/* Lista de productos */}
         <div className={styles.productList}>
           {products.map((product) => (
-            <div key={product.id} className={styles.productCard}>
-              <img src={product.image} alt={product.title} className={styles.productImage} />
-              <h3 className={styles.productTitle}>{product.title}</h3>
-              <p className={styles.productPrice}>${product.price}</p>
-            </div>
+            <Link to={`/product/${product.id}`} key={product.id} style={{ textDecoration: 'none', color: 'inherit' }}>
+              <div className={styles.productCard}>
+                <img src={product.image} alt={product.title} className={styles.productImage} />
+                <h3 className={styles.productTitle}>{product.title}</h3>
+                <p className={styles.productPrice}>${product.price}</p>
+              </div>
+            </Link>
           ))}
         </div>
       </div>

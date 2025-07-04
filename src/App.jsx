@@ -3,7 +3,7 @@ import RegisterForm from './components/RegisterForm'
 import LoginForm from './components/Login'
 import Home from './pages/Home'
 import Products from './pages/Products'
-// import ProductDetail from './pages/ProductDetail'
+import ProductDetail from './pages/ProductDetail'
 
 function App() {
   return (
@@ -13,7 +13,7 @@ function App() {
         <Route path="/register" element={<RegisterForm />} />
         <Route path="/login" element={<LoginForm />} />
         <Route path="/products" element={<Products />} />
-        {/* <Route path="/product/:id" element={<ProductDetail />} /> */}
+        <Route path="/product/:id" element={<ProductDetail />} />
       </Routes>
     </div>
   )
