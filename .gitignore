@@ -34,3 +34,4 @@ dist/
 
 # Editor config (VSCode, opcional)
 .vscode/
+env
