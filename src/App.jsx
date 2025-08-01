@@ -4,6 +4,7 @@ import LoginForm from './components/Login'
 import Home from './pages/Home'
 import Products from './pages/Products'
 import ProductDetail from './pages/ProductDetail'
+import ProductEdit from './pages/ProductEdit'
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route path="/login" element={<LoginForm />} />
         <Route path="/products" element={<Products />} />
         <Route path="/product/:id" element={<ProductDetail />} />
+        <Route path="/product/:id/edit" element={<ProductEdit />} />
       </Routes>
     </div>
   )

@@ -10,6 +10,7 @@ export default function LoginForm() {
 
   const handleLogin = () => {
     // Lógica de validación simple
+    debugger
     if (email && password) {
       // Simulación de login exitoso
       navigate('/products')

@@ -8,7 +8,7 @@ function RegisterForm() {
       <div className="container">
         <Title text="Formulario de Registro" />
         <form className="form">
-          <InputField label="Nombre" type="text" placeholder="Ingrese su nombre" />
+          <InputField className="text-black" label="Nombre" type="text" placeholder="Ingrese su nombre" />
           <InputField label="Apellido" type="text" placeholder="Ingrese su apellido" />
           <InputField label="Email" type="email" placeholder="ejemplo@mail.com" />
           <InputField label="Teléfono" type="tel" placeholder="11-1234-5678" />
